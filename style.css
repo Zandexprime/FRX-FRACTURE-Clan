@@ -92,3 +92,60 @@ p { font-size: 0.9rem; color: #888; line-height: 1.6; margin-bottom: 25px; }
     color: #555;
     font-family: 'Orbitron';
 }
+#countdown {
+    color: var(--neon);
+    font-weight: 900;
+    font-size: 1rem;
+    text-shadow: 0 0 10px var(--neon);
+}
+
+    /* --- RESPONSIVE DESIGN --- */
+
+/* For Tablets and smaller screens */
+@media (max-width: 768px) {
+    .move-card {
+        padding: 30px 20px;
+        width: 95%;
+        border-radius: 20px; /* Slightly tighter corners for mobile */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+/* For Mobile Phones (Small) */
+@media (max-width: 480px) {
+    .dashboard {
+        padding: 15px;
+    }
+
+    .status-box {
+        font-size: 0.55rem;
+        padding: 4px 10px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .link-display {
+        font-size: 0.7rem;
+        padding: 12px;
+    }
+
+    .move-btn {
+        width: 100%; /* Full width button is easier to click on mobile */
+        padding: 12px 20px;
+        font-size: 0.75rem;
+    }
+
+    .auto-text {
+        font-size: 0.6rem;
+    }
+}
