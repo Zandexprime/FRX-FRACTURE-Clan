@@ -33,17 +33,25 @@
         <div class="auto-text">Redirecting in <span id="countdown">10</span>s...</div>
     </div>
 
-    <script>
-        // Auto-redirect logic
-        let count = 10;
-        const timer = setInterval(() => {
-            count--;
-            document.getElementById('countdown').innerText = count;
-            if(count <= 0) {
-                window.location.href = "https://zandexprime.github.io/frx-esport-clan";
-                clearInterval(timer);
-            }
-        }, 1000);
-    </script>
+   <script>
+    // Set starting count to 10
+    let count = 10; 
+    const timerElement = document.getElementById('countdown');
+
+    const timer = setInterval(() => {
+        count--;
+        
+        // Update the text on screen
+        if(timerElement) {
+            timerElement.innerText = count;
+        }
+
+        // When it hits zero, move the user
+        if(count <= 0) {
+            clearInterval(timer);
+            window.location.href = "https://zandexprime.github.io/frx-esport-clan";
+        }
+    }, 1000);
+</script>
 </body>
 </html>
