@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRX | SITE RELOCATION</title>
+    <link rel="stylesheet" href="move-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-blur"></div>
+    
+    <div class="move-card">
+        <div class="status-box">
+            <span class="dot"></span> RELOCATING_UPLINK
+        </div>
+        
+        <h1>WE HAVE <span>MOVED</span></h1>
+        <p>The FRX Scrim Hub has migrated to a new secure domain for better performance and security updates.</p>
+        
+        <div class="link-display">
+            https://zandexprime.github.io/frx-esport-clan
+        </div>
+
+        <a href="https://zandexprime.github.io/frx-esport-clan" class="move-btn">
+            ENTER NEW HUB
+        </a>
+
+        <div class="auto-text">Redirecting in <span id="countdown">3</span>s...</div>
+    </div>
+
+    <script>
+        // Auto-redirect logic
+        let count = 3;
+        const timer = setInterval(() => {
+            count--;
+            document.getElementById('countdown').innerText = count;
+            if(count <= 0) {
+                window.location.href = "https://zandexprime.github.io/frx-esport-clan";
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
